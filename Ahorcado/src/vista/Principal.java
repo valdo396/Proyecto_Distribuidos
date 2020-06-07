@@ -113,6 +113,7 @@ public class Principal extends javax.swing.JFrame {
         nuevoJuego = new javax.swing.JButton();
         salir = new javax.swing.JButton();
         largoPalabra = new javax.swing.JLabel();
+        nuevoJuego1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Ahorcado");
@@ -579,6 +580,13 @@ public class Principal extends javax.swing.JFrame {
         largoPalabra.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
         largoPalabra.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
+        nuevoJuego1.setText("Marcadores");
+        nuevoJuego1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nuevoJuego1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -593,7 +601,10 @@ public class Principal extends javax.swing.JFrame {
                         .addComponent(nuevoJuego, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(salir, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(largoPalabra, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(nuevoJuego1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(largoPalabra, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(ahorcado, javax.swing.GroupLayout.PREFERRED_SIZE, 446, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -610,7 +621,9 @@ public class Principal extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(largoPalabra, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(largoPalabra, javax.swing.GroupLayout.DEFAULT_SIZE, 34, Short.MAX_VALUE)
+                            .addComponent(nuevoJuego1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -789,6 +802,13 @@ public class Principal extends javax.swing.JFrame {
         juego.validarPalabra(presionado[0]);
     }//GEN-LAST:event_formKeyReleased
 
+    private void nuevoJuego1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nuevoJuego1ActionPerformed
+        VistaMarcadores ventanita1 = new VistaMarcadores();
+        ventanita1.setLocationRelativeTo(null);
+        ventanita1.setVisible(true);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_nuevoJuego1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -860,6 +880,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel6;
     private javax.swing.JLabel largoPalabra;
     private javax.swing.JButton nuevoJuego;
+    private javax.swing.JButton nuevoJuego1;
     private javax.swing.JButton salir;
     private javax.swing.JButton Ñ;
     // End of variables declaration//GEN-END:variables
