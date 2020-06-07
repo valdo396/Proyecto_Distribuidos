@@ -1,0 +1,5 @@
+practica3distribuidos.LaminaMarcoCliente2
+practica3distribuidos.LaminaMarcoCliente2$SeleccionarArchivo
+practica3distribuidos.Cliente2
+practica3distribuidos.MarcoCliente2
+practica3distribuidos.LaminaMarcoCliente2$EnviaDoc
