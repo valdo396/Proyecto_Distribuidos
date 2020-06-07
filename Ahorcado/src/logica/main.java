@@ -6,6 +6,7 @@
 package logica;
 
 import vista.Principal;
+import vista.VistaInicial;
 
 /**
  *
@@ -17,10 +18,8 @@ import vista.Principal;
 
     public static void main(String[] args) {
         
-        Principal ventanita = new Principal();
+        VistaInicial ventanita = new VistaInicial();
         ventanita.setLocationRelativeTo(null);
         ventanita.setVisible(true);
-        
     }
-    
 }
